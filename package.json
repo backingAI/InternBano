@@ -1,0 +1,28 @@
+{
+  "name": "jobbox",
+  "version": "2.0.0",
+  "homepage": "https://backingAI.github.io/backingAI",
+  "private": true,
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sass": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css"
+  },
+  "dependencies": {
+    "mongoose": "^6.6.1",
+    "next": "^13.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-perfect-scrollbar": "^1.5.8",
+    "sass": "^1.56.1",
+    "swiper": "^8.4.4"
+  },
+  "devDependencies": {
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0"
+  }
+}

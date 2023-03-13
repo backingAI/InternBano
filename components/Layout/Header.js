@@ -32,7 +32,7 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                 </Link>
               </div>
             </div>
-            <div className="header-nav">
+            {/* <div className="header-nav">
               <nav className="nav-main-menu">
                 <ul className="main-menu">
                   <li className="has-children">
@@ -164,7 +164,10 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                         </Link>
                       </li>
                       <li>
-                        <Link legacyBehavior href="/page-register">
+                        <Link
+                          legacyBehavior
+                          href={{ pathname: "/page-register" }}
+                        >
                           <a>Register</a>
                         </Link>
                       </li>
@@ -228,10 +231,10 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                 <span className="burger-icon-mid" />
                 <span className="burger-icon-bottom" />
               </div>
-            </div>
+            </div> */}
             <div className="header-right">
               <div className="block-signin">
-                <Link legacyBehavior href="page-register">
+                <Link legacyBehavior href="/page-register">
                   <a className="text-link-bd-btom hover-up">Register</a>
                 </Link>
 
@@ -245,18 +248,17 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
           </div>
         </div>
       </header>
-      <div className="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+      {/* <div className="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
         <div className="mobile-header-wrapper-inner">
           <div className="mobile-header-content-area">
             <div className="perfect-scroll">
               <div className="mobile-search mobile-header-border mb-30">
-                <form action="#">
+                <form action="#welcome">
                   <input type="text" placeholder="Search…" />
                   <i className="fi-rr-search" />
                 </form>
               </div>
               <div className="mobile-menu-wrap mobile-header-border">
-                {/* mobile menu start*/}
                 <nav>
                   <ul className="mobile-menu font-heading">
                     <li className="has-children">
@@ -472,8 +474,8 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
+      </div> */}
+      {/* <div className="mobile-header-active mobile-header-wrapper-style perfect-scrollbar">
         <div className="mobile-header-wrapper-inner">
           <div className="mobile-header-content-area">
             <div className="perfect-scroll">
@@ -484,7 +486,6 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                 </form>
               </div>
               <div className="mobile-menu-wrap mobile-header-border">
-                {/* mobile menu start*/}
                 <nav>
                   <ul className="mobile-menu font-heading">
                     <li className="has-children">
@@ -700,7 +701,7 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

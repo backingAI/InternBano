@@ -1,15 +1,12 @@
-import mongoose from "mongoose"
+// export default dbConnect
+const mysql = require("mysql");
+//const dotenv = require("dotenv").config();
 
-const dbConnect = async () => {
-  if (mongoose.connection.readyState >= 1) {
-    return
-  }
-  mongoose
-    .connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
-    .then((con) => console.log("connected to DB"))
-}
-
-export default dbConnect
+const dbConnect = mysql.createPool({
+  connectionLimit: 10,
+  host: "localhost",
+  user: "root",
+  password: "Nice/mk123",
+  database: "intern_bano",
+});
+module.exports = dbConnect;

@@ -75,28 +75,28 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                   </li>
                   <li className="has-children">
                     <Link legacyBehavior href="/jobs-grid">
-                      <a>Find a Job</a>
+                      <a>Find a Internship</a>
                     </Link>
 
                     <ul className="sub-menu">
                       <li>
                         <Link legacyBehavior href="/jobs-grid">
-                          <a>Jobs Grid</a>
+                          <a>Internship Grid</a>
                         </Link>
                       </li>
                       <li>
                         <Link legacyBehavior href="/jobs-list">
-                          <a>Jobs List</a>
+                          <a>Internship List</a>
                         </Link>
                       </li>
                       <li>
                         <Link legacyBehavior href="/job-details">
-                          <a>Jobs Details</a>
+                          <a>Internship Details</a>
                         </Link>
                       </li>
                       <li>
                         <Link legacyBehavior href="/job-details-2">
-                          <a>Jobs Details 2 </a>
+                          <a>Internship Details 2 </a>
                         </Link>
                       </li>
                     </ul>
@@ -142,49 +142,33 @@ const Header = ({ handleOpen, handleRemove, openClass }) => {
                       </li>
                     </ul>
                   </li>
-                  <li className="has-children">
-                    <Link legacyBehavior href="/blog-grid">
-                      <a>Pages</a>
-                    </Link>
+                  {/* <li className="has-children">
+                                        <Link legacyBehavior href="/blog-grid"><a>Pages</a></Link>
 
-                    <ul className="sub-menu">
-                      <li>
-                        <Link legacyBehavior href="/page-about">
-                          <a>About Us</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="/page-pricing">
-                          <a>Pricing Plan</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="/page-contact">
-                          <a>Contact Us</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="/page-register">
-                          <a>Register</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="/page-signin">
-                          <a>Signin</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="/page-reset-password">
-                          <a>Reset Password</a>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="/page-content-protected">
-                          <a>Content Protected</a>
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
+                                        <ul className="sub-menu">
+                                            <li>
+                                                <Link legacyBehavior href="/page-about"><a>About Us</a></Link>
+                                            </li>
+                                            <li>
+                                                <Link legacyBehavior href="/page-pricing"><a>Pricing Plan</a></Link>
+                                            </li>
+                                            <li>
+                                                <Link legacyBehavior href="/page-contact"><a>Contact Us</a></Link>
+                                            </li>
+                                            <li>
+                                                <Link legacyBehavior href="/page-register"><a>Register</a></Link>
+                                            </li>
+                                            <li>
+                                                <Link legacyBehavior href="/page-signin"><a>Signin</a></Link>
+                                            </li>
+                                            <li>
+                                                <Link legacyBehavior href="/page-reset-password"><a>Reset Password</a></Link>
+                                            </li>
+                                            <li>
+                                                <Link legacyBehavior href="/page-content-protected"><a>Content Protected</a></Link>
+                                            </li>
+                                        </ul>
+                                    </li> */}
                   <li className="has-children">
                     <Link legacyBehavior href="/blog-grid">
                       <a>Blog</a>
